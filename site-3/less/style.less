@@ -1,0 +1,64 @@
+// out: ../css/style.css
+:root {
+    --main-font-family: Helvetica;
+    --logo-font-family: 'Lobster';
+    --copyright-font-family: Arial;
+    
+    --centralBlock-margin: 0 auto;
+    --page-width: 1280px;
+}
+
+.setWidthAndCentrBlock() {
+    width: var(--page-width);
+    margin: var(--centralBlock-margin);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    background-image: linear-gradient(to top, #e0e0e0, #ffffff);
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        min-height: 113px;
+        .setWidthAndCentrBlock();
+    }
+    &_navigation {
+        display: flex;
+        align-items: center;
+        &-link {
+            :first-of-type {
+                border: none;
+            }
+            font-family: var(--main-font-family);
+            font-size: 16px;
+            line-height: 23px;
+            text-shadow: 0.5px 0.9px 0 #ffffff;
+            color: #545454;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 27px;
+            box-sizing: border-box;
+            border-left: 1px solid black;
+            height: 100%;
+        }
+    }
+}
+
+.logo {
+    font-family: var(--main-font-family);
+    font-size: 49px;
+    color: #676666;
+    text-decoration: none;
+    align-self: center;
+    &_accentuated {
+        color: #ff7700;
+    }
+}
