@@ -1,0 +1,11 @@
+﻿Добавлены папки:
+
+    template to 'root'
+    img to 'root'
+    less to 'root'
+    css to 'root'
+    js to 'root'
+
+Добавлены файлы:
+
+    index.html to 'root'
