@@ -50,6 +50,14 @@
 .header_navigation-link:first-of-type {
   border: none;
 }
+.header_navigation-link:hover {
+  background-image: linear-gradient(to top, #c9c0c0, #ffffff);
+  box-sizing: border-box;
+  border-bottom: 5px solid #ff7d00;
+}
+.header_navigation-link:active {
+  border: none;
+}
 .logo {
   font-family: var(--logo-font-family);
   font-size: 49px;
@@ -100,7 +108,7 @@
   line-height: 23px;
   color: #ffffff;
   opacity: 0.59;
-  background-color: #969292;
+  background: #969292;
   display: block;
   width: 93px;
   height: 33px;
@@ -109,8 +117,14 @@
   text-align: center;
   padding: 5px 0;
 }
+.downloading_button-browse:hover {
+  opacity: 1;
+}
+.downloading_button-browse:active {
+  opacity: 0.59;
+}
 .downloading_button-upload {
-  background-image: linear-gradient(to top, #ff6600, #ffa400);
+  background: linear-gradient(to top, #ff6600, #ffa400);
   font-family: var(--main-font-family);
   font-size: 24px;
   font-weight: bold;
@@ -120,6 +134,16 @@
   border-radius: 4px;
   width: 209px;
   height: 47px;
+}
+.downloading_button-upload:hover {
+  background: linear-gradient(to bottom, #ff6600, #ffa400);
+}
+.downloading_button-upload:active {
+  background: linear-gradient(to top, #ff6600, #ffa400);
+  outline: none;
+}
+.downloading_button-upload:focus {
+  outline: #ff6600;
 }
 .wrapper {
   display: flex;
@@ -146,6 +170,20 @@
 .pictureBlock_img {
   width: 203px;
   height: 197px;
+}
+.pictureBlock_img-link:hover::after {
+  content: url(../img/loupe-ico.png);
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 92px;
+  left: 92px;
+}
+.pictureBlock_img-link:hover {
+  opacity: 0.55;
+}
+.pictureBlock_img-link:active {
+  opacity: 1;
 }
 .pictureBlock_date {
   font-family: var(--imgDate-dont-family);
@@ -188,6 +226,9 @@
 .pictureBlock_share-link:first-of-type {
   margin-left: 0;
 }
+.pictureBlock_share-link:hover {
+  background-color: #283e8f;
+}
 .pictureBlock_figcaption {
   display: flex;
   order: 1;
@@ -212,4 +253,17 @@
   height: 22px;
   padding: 4px 4px;
   box-sizing: border-box;
+}
+.footer {
+  text-align: right;
+  padding: 0 160px 51px 0;
+  box-sizing: border-box;
+  width: var(--page-width);
+  margin: var(--centralBlock-margin);
+  margin-top: 30px;
+}
+.copyright {
+  font-family: var(--copyright-font-family);
+  font-size: 17px;
+  color: #8b8a8a;
 }
