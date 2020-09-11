@@ -19,11 +19,19 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="main">
         <form action="#" class="downloading">
-            <span class="downloading_heading">Please select an image from your computer </span>
-            <label><input type="file" id="downloadImg" class="downloading_field">browse</label>
-            <input type="submit" value="Upload image" class="downloading_button">
+            <div>
+                <span class="downloading_heading">Please select an image from your computer </span>
+                <div class="downloading_wrapper">
+                    <div class="downloading_field">
+                        <label class="downloading_button-browse">
+                            <input type="file" id="downloadImg" class="__hidden">browse
+                        </label>
+                    </div>
+                    <input type="submit" value="Upload image" class="downloading_button-upload">
+                </div>
+            </div>
         </form>
         <div class="wrapper">
             <figure class="pictureBlock">

@@ -18,6 +18,9 @@
     padding: 0;
 }
 
+.__hidden {
+    display: none;
+}
 
 .header {
     background-image: linear-gradient(to top, #e0e0e0, #ffffff);
@@ -26,12 +29,13 @@
         justify-content: space-between;
         min-height: 113px;
         .setWidthAndCentrBlock();
+        margin-bottom: 42px
     }
     &_navigation {
         display: flex;
         align-items: center;
         &-link {
-            :first-of-type {
+            &:first-of-type {
                 border: none;
             }
             font-family: var(--main-font-family);
@@ -60,5 +64,67 @@
     align-self: center;
     &_accentuated {
         color: #ff7700;
+    }
+}
+
+.main {
+    .setWidthAndCentrBlock();
+}
+
+.downloading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 76px 0;
+    &_heading {
+        font-family: var(--main-font-family);
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 23px;
+        color: #565555;
+        display: block;
+        margin: 0 0 27px 0;
+    }
+    &_wrapper {
+        display: flex;
+    }
+    &_field {
+        background-image: linear-gradient(to bottom, #e2dada, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #FFFFFF);
+        width: 447px;
+        height: 46px;
+        display: flex;
+        justify-content: flex-end;
+        padding: 6px 9px;
+        box-sizing: border-box;
+        border: solid 1px #cacaca;
+        border-radius: 5px;
+        margin: 0 16px 0 0;
+    }
+    &_button-browse {
+        font-family: Helvetica;
+        font-size: 18px;
+        line-height: 23px;
+        color: #ffffff;
+        opacity: 0.59;
+        background-color: #969292;
+        display: block;
+        width: 93px;
+        height: 33px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        text-align: center;
+        padding: 5px 0;
+    }
+    &_button-upload {
+        background-image: linear-gradient(to top, #ff6600, #ffa400);
+        font-family: Helvetica;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 23px;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        width: 209px;
+        height: 47px;
     }
 }
