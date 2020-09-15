@@ -1,2 +1,29 @@
 // out: ../css/style.css
 
+:root {
+    --main-font-family: Montserrat;
+    --sub-font-family: Raleway;
+    
+    --mainFont-color: #8c8c8c;
+    --subFont-color: #fff;
+    --headingFont-color: #555;
+    --accentuatedFont-color: #c7b299;
+    
+    --mainBg-color: var(--subFont-color);
+    --subBg-color: #fbfaf8;
+    --footerTopBg-color: #191919;
+    --footerBottomBg-color: #111;
+    --gradientBg: linear-gradient(to top, #211b19, #4e3427);
+    --buttonBg-color: #998675;
+    --dateDayBg-color: #363636;
+    --dateMonthBg-color: #252525;
+    --hoverDateDayBg-color: var(--accentuatedFont-color);
+    --hoverDateMonthBg-color: #a48d72;
+    --hoverBg-color: #362f2d;
+    
+    --noBgImg-color: rgba(17, 17, 17, 0.7);
+}
+
+.top {
+    background: var(--noBgImg-color) url(../img/header-bg.jpg) no-repeat;
+}
