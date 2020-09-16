@@ -22,8 +22,209 @@
     --hoverBg-color: #362f2d;
     
     --noBgImg-color: rgba(17, 17, 17, 0.7);
+    
+    --site-width: 1230px;
 }
+
+.paddingSite() {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.ico {
+    &-logo {
+        fill: var(--subFont-color);
+    }
+    &-basket {
+        fill: var(--subFont-color);
+    }
+    &-loupe {
+        fill: var(--subFont-color);
+    }
+}
+
+.button {
+    &-basket {
+        background: none;
+        border: none;
+        margin: 0 28px 0 23px;
+        &:hover .ico-basket {
+            fill: var(--accentuatedFont-color);
+        }
+        &:focus {
+            outline: none;
+        }
+        &:focus .ico-basket {
+            fill: var(--accentuatedFont-color);
+        }
+        &:active .ico-basket {
+            fill: var(--mainFont-color);
+        }
+    }
+    &-search {
+        display: none;
+    }
+    &-get-started {
+        font-family: var(--sub-font-family);
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 23px;
+        color: var(--subFont-color);
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 53px;
+        border-radius: 3px;
+        box-shadow: inset 0px -3px 0 0 #736357;
+        background-color: var(--buttonBg-color);
+        &:hover {
+            background-color: #736357;
+        }
+        &:active {
+            color: var(--mainFont-color);
+            background-color: #736357;
+        }
+    }
+}
+
 
 .top {
     background: var(--noBgImg-color) url(../img/header-bg.jpg) no-repeat;
+    background-blend-mode: hue;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 1024px;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--site-width);
+    .paddingSite();
+}
+
+.logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    &_text {
+        font-family: var(--sub-font-family);
+        font-size: 34px;
+        letter-spacing: -1.36px;
+        color: var(--subFont-color);
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    &_link {
+        font-family: var(--main-font-family);
+        font-size: 14px;
+        font-weight: 300;
+        color: var(--subFont-color);
+        text-decoration: none;
+        margin: 0 30px 0 0;
+        &:hover {
+            color: var(--accentuatedFont-color);
+        }
+        &:active {
+            color: var(--mainFont-color);
+        }
+    }
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    &_field {
+        width: 0;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        &-svg-ico:hover .ico-loupe {
+            fill: var(--accentuatedFont-color);
+        }
+        &:focus {
+            width: 100px;
+            background: white;
+            margin: 0 5px 0 0
+        }
+        &:focus + &-svg-ico {
+            display: none;
+        }
+        &:focus ~ .search_button-svg-ico {
+            display: block;
+        }
+    }
+    &_button-svg-ico {
+        display: none;
+        &:hover .ico-loupe {
+           fill: var(--accentuatedFont-color);
+        }
+    }
+}
+
+.slider {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--site-width);
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    &_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+    }
+    &_sub-heading {
+        font-family: var(--sub-font-family);
+        font-size: 36px;
+        font-weight: 500;
+        color: var(--subFont-color);
+        display: block;
+        margin: 0 0 14px 0;
+    }
+    &_main-heading {
+        font-family: var(--sub-font-family);
+        font-size: 52px;
+        font-weight: 800;
+        color: var(--subFont-color);
+        display: block;
+        margin: 0 0 19px 0;
+    }
+    &_text {
+        font-family: var(--main-font-family);
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        color: var(--subFont-color);
+        margin: 0 0 52px 0;
+    }
+    &_control {
+        font-size: 40px;
+        color: #fff;
+        opacity: 0.5;
+        &:hover {
+            color: #d3c1ad;
+            opacity: 1;
+        }
+    }
+}
+
+.controls {
+    opacity: 0.5;
 }

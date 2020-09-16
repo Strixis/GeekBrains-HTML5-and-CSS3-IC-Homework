@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>Waxom</title>
 </head>
 <body>
     <section class="top">
@@ -29,53 +32,52 @@
                 <a href="#" class="navigation_link">Pricing</a>
                 <a href="#" class="navigation_link">Shortcodes</a>
                 <a href="#" class="navigation_link">Contact</a>
+                <button class="button-basket">
+                    <svg class="ico-basket"
+                     xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     width="18px" height="24px">
+                        <path d="M14.995,2.999 L13.496,2.999 C13.496,1.342 11.483,-0.002 8.999,-0.002 C6.514,-0.002 4.501,1.342 4.501,2.999 L3.002,2.999 C1.346,2.999 0.003,4.341 0.003,5.997 L0.003,20.995 C0.003,22.651 1.346,23.994 3.002,23.994 L14.995,23.994 C16.651,23.994 17.994,22.651 17.994,20.995 L17.994,5.997 C17.994,4.341 16.651,2.999 14.995,2.999 ZM8.999,1.498 C10.655,1.498 11.997,1.962 11.997,2.999 L6.000,2.999 C6.000,1.962 7.343,1.498 8.999,1.498 ZM16.495,20.995 C16.495,21.823 15.823,22.494 14.995,22.494 L3.002,22.494 C2.173,22.494 1.502,21.823 1.502,20.995 L1.502,19.495 L16.495,19.495 L16.495,20.995 ZM16.495,17.995 L1.502,17.995 L1.502,5.997 C1.502,5.169 2.173,4.497 3.002,4.497 L4.501,4.497 L4.501,8.998 L6.000,8.998 L6.000,4.497 L11.997,4.497 L11.997,8.998 L13.496,8.998 L13.496,4.497 L14.995,4.497 C15.824,4.497 16.495,5.169 16.495,5.997 L16.495,17.995 Z"/>
+                    </svg>
+                </button>
+                <form action="#" class="search">
+                    <input type="search" class="search_field" id="searchField">
+                    <label for="searchField" class="search_field-svg-ico">
+                        <svg class="ico-loupe"
+                             xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                             width="24px" height="24px">
+                            <path d="M23.762,22.681 L17.568,16.586 C19.190,14.825 20.187,12.494 20.187,9.929 C20.186,4.443 15.668,-0.002 10.093,-0.002 C4.519,-0.002 0.000,4.443 0.000,9.929 C0.000,15.416 4.519,19.862 10.093,19.862 C12.501,19.862 14.711,19.028 16.446,17.644 L22.663,23.763 C22.966,24.062 23.458,24.062 23.761,23.763 C24.064,23.464 24.064,22.979 23.762,22.681 ZM10.093,18.334 C5.377,18.334 1.553,14.572 1.553,9.929 C1.553,5.288 5.377,1.525 10.093,1.525 C14.810,1.525 18.633,5.288 18.633,9.929 C18.633,14.572 14.810,18.334 10.093,18.334 Z"/>
+                        </svg>
+                    </label>
+                    <label for="buttonSearch" class="search_button-svg-ico">
+                        <svg class="ico-loupe"
+                             xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                             width="24px" height="24px">
+                            <path d="M23.762,22.681 L17.568,16.586 C19.190,14.825 20.187,12.494 20.187,9.929 C20.186,4.443 15.668,-0.002 10.093,-0.002 C4.519,-0.002 0.000,4.443 0.000,9.929 C0.000,15.416 4.519,19.862 10.093,19.862 C12.501,19.862 14.711,19.028 16.446,17.644 L22.663,23.763 C22.966,24.062 23.458,24.062 23.761,23.763 C24.064,23.464 24.064,22.979 23.762,22.681 ZM10.093,18.334 C5.377,18.334 1.553,14.572 1.553,9.929 C1.553,5.288 5.377,1.525 10.093,1.525 C14.810,1.525 18.633,5.288 18.633,9.929 C18.633,14.572 14.810,18.334 10.093,18.334 Z"/>
+                        </svg>
+                    </label>
+                    <input type="submit" class="button-search" id="buttonSearch">
+                </form>
             </nav>
-            <button class="basket">
-                <svg class="ico-basket"
-                 xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                 width="18px" height="24px">
-                    <path d="M14.995,2.999 L13.496,2.999 C13.496,1.342 11.483,-0.002 8.999,-0.002 C6.514,-0.002 4.501,1.342 4.501,2.999 L3.002,2.999 C1.346,2.999 0.003,4.341 0.003,5.997 L0.003,20.995 C0.003,22.651 1.346,23.994 3.002,23.994 L14.995,23.994 C16.651,23.994 17.994,22.651 17.994,20.995 L17.994,5.997 C17.994,4.341 16.651,2.999 14.995,2.999 ZM8.999,1.498 C10.655,1.498 11.997,1.962 11.997,2.999 L6.000,2.999 C6.000,1.962 7.343,1.498 8.999,1.498 ZM16.495,20.995 C16.495,21.823 15.823,22.494 14.995,22.494 L3.002,22.494 C2.173,22.494 1.502,21.823 1.502,20.995 L1.502,19.495 L16.495,19.495 L16.495,20.995 ZM16.495,17.995 L1.502,17.995 L1.502,5.997 C1.502,5.169 2.173,4.497 3.002,4.497 L4.501,4.497 L4.501,8.998 L6.000,8.998 L6.000,4.497 L11.997,4.497 L11.997,8.998 L13.496,8.998 L13.496,4.497 L14.995,4.497 C15.824,4.497 16.495,5.169 16.495,5.997 L16.495,17.995 Z"/>
-                </svg>
-            </button>
-            <form action="#" class="search">
-                
-                <label for="searchField" class="search_field-svg-ico">
-                    <svg class="ico-loupe"
-                         xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         width="24px" height="24px">
-                        <path d="M23.762,22.681 L17.568,16.586 C19.190,14.825 20.187,12.494 20.187,9.929 C20.186,4.443 15.668,-0.002 10.093,-0.002 C4.519,-0.002 0.000,4.443 0.000,9.929 C0.000,15.416 4.519,19.862 10.093,19.862 C12.501,19.862 14.711,19.028 16.446,17.644 L22.663,23.763 C22.966,24.062 23.458,24.062 23.761,23.763 C24.064,23.464 24.064,22.979 23.762,22.681 ZM10.093,18.334 C5.377,18.334 1.553,14.572 1.553,9.929 C1.553,5.288 5.377,1.525 10.093,1.525 C14.810,1.525 18.633,5.288 18.633,9.929 C18.633,14.572 14.810,18.334 10.093,18.334 Z"/>
-                    </svg>
-                </label>
-                <input type="search" class="search_field" id="searchField">
-                <label for="buttonSearch" class="search_button-svg-ico">
-                    <svg class="ico-loupe"
-                         xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         width="24px" height="24px">
-                        <path d="M23.762,22.681 L17.568,16.586 C19.190,14.825 20.187,12.494 20.187,9.929 C20.186,4.443 15.668,-0.002 10.093,-0.002 C4.519,-0.002 0.000,4.443 0.000,9.929 C0.000,15.416 4.519,19.862 10.093,19.862 C12.501,19.862 14.711,19.028 16.446,17.644 L22.663,23.763 C22.966,24.062 23.458,24.062 23.761,23.763 C24.064,23.464 24.064,22.979 23.762,22.681 ZM10.093,18.334 C5.377,18.334 1.553,14.572 1.553,9.929 C1.553,5.288 5.377,1.525 10.093,1.525 C14.810,1.525 18.633,5.288 18.633,9.929 C18.633,14.572 14.810,18.334 10.093,18.334 Z"/>
-                    </svg>
-                </label>
-                <input type="submit" class="button-search" id="buttonSearch">
-            </form>
         </header>
         <section class="slider">
-            <a href="#" class="slider_control-left">left</a>
+            <a href="#" class="slider_control"><i class="fas fa-chevron-left"></i></a>
             <div class="slider_content">
                 <span class="slider_sub-heading">Unique and Modern Design</span>
                 <span class="slider_main-heading">Portfolio PSD Template</span>
                 <p class="slider_text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
                 <a href="#" class="button-get-started">Get Started</a>
-                <form action="#" class="controls">
-                    <input type="radio" class="controls_field" name="pagination" checked>
-                    <input type="radio" class="controls_field" name="pagination">
-                    <input type="radio" class="controls_field" name="pagination">
-                    <input type="radio" class="controls_field" name="pagination">
-                </form>
             </div>
-            <a href="#" class="slider_control-right">right</a>
+            <a href="#" class="slider_control"><i class="fas fa-chevron-right"></i></a>
         </section>
+        <form action="#" class="controls">
+            <input type="radio" class="controls_field" name="pagination" checked>
+            <input type="radio" class="controls_field" name="pagination">
+            <input type="radio" class="controls_field" name="pagination">
+            <input type="radio" class="controls_field" name="pagination">
+        </form>
     </section>
     <main>
         <section class="things">
